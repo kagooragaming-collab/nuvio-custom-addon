@@ -1,0 +1,39 @@
+
+{
+  "id": "com.custom.adult.catalog",
+  "version": "1.0.0",
+  "name": "Custom Adult Catalog",
+  "description": "Custom video catalog addon",
+  "resources": [
+    "catalog",
+    "meta",
+    "stream"
+  ],
+  "types": [
+    "movie"
+  ],
+  "idPrefixes": [
+    "authorized:"
+  ],
+  "catalogs": [
+    {
+      "type": "movie",
+      "id": "latest",
+      "name": "Latest Videos",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "popular",
+      "name": "Popular Videos"
+    }
+  ],
+  "behaviorHints": {
+    "adult": true
+  }
+}
